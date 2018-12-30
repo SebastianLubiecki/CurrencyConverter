@@ -1,5 +1,7 @@
 package ConectionWithAPI;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MultiConverter {
@@ -16,6 +18,15 @@ public class MultiConverter {
         listOfCurrency.add(rest_chf);
     }
 
+    public static void main(String[] args) throws IOException {
+
+        List list = new ArrayList();
+        MultiConverter multiConverter = new MultiConverter(list);
+        Count count = new Count();
+
+
+        System.out.println("100 zl is worth " + count.countCurrency(multiConverter.rest_chf) + " CHF");
+    }
 
 
 }
