@@ -1,6 +1,6 @@
 package ConectionWithAPI;
 
-public class Currency {
+class Currency {
     String name;
     double value;
 
