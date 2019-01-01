@@ -22,12 +22,12 @@ public class MultiConverter {
         List<REST_NBP> list = new ArrayList<>();
         MultiConverter multiConverter = new MultiConverter(list);
         Count count = new Count();
+        //System.out.println("Value of " + multiConverter.rest_chf.toString() + " in PLN");
 
-
-        System.out.println("100 zl is worth " + count.countCurrency(multiConverter.rest_chf) + " CHF");
-        System.out.println("100 zl is worth " + count.countCurrency(multiConverter.rest_eur) + " EUR");
-        System.out.println("100 zl is worth " + count.countCurrency(multiConverter.rest_gpb) + " GBP");
-        System.out.println("100 zl is worth " + count.countCurrency(multiConverter.rest_usd) + " USD");
+        System.out.println("100 PLN is worth " + count.countCurrency(multiConverter.rest_chf) + " CHF");
+        System.out.println("100 PLN is worth " + count.countCurrency(multiConverter.rest_eur) + " EUR");
+        System.out.println("100 PLN is worth " + count.countCurrency(multiConverter.rest_gpb) + " GBP");
+        System.out.println("100 PLN is worth " + count.countCurrency(multiConverter.rest_usd) + " USD");
 
     }
 

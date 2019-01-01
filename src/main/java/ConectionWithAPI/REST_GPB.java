@@ -11,7 +11,7 @@ public class REST_GPB implements REST_NBP {
     @Override
     public Currency getCurrency() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(REST_NBP.jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/gpb/")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(REST_NBP.jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/gbp/")), Currency.class);
         //System.out.println(currency);
         return currency;
     }

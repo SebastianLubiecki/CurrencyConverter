@@ -2,11 +2,13 @@ package ConectionWithAPI;
 
 import java.io.IOException;
 
-public class Count { //maybe static?
+class Count { //maybe static?
+    private static int NUMBER_OF_PLN = 100;
 
-    public double countCurrency(REST_NBP rest_nbp) throws IOException {
+    double countCurrency(REST_NBP rest_nbp) throws IOException {
         String[] valuesArray = String.valueOf(rest_nbp.getCurrency().getRates()).split(",");
         double value = Double.parseDouble(valuesArray[1].replace("mid=", ""));
-        return 100 / value;
+        double result = NUMBER_OF_PLN / value;
+        return result;
     }
 }
