@@ -25,7 +25,7 @@ public class REST_CHF implements REST_NBP {
     @Override
     public String toString() {
         try {
-            return "REST_CHF: "+ getCurrency().getRates();
+            return "REST_CHF: " + getCurrency().getRates();
         } catch (IOException e) {
             e.printStackTrace();
         }
