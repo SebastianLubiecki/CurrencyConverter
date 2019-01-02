@@ -10,7 +10,7 @@ class Comparator {
         double[] arrayMouthAgo = REST_NBP.getAskBidRequest(rest_nbp.getCurrencyPast());
         double changeTo = (value / arrayMouthAgo[1]);
         double changeFrom = changeTo * arrayNow[0];
-        double result = value - changeFrom;
+        double result = changeFrom - value;
         if (result > 0) {
             System.out.println("If you changed " + rest_nbp.name() + " to PLN a month ago, you would earn " + result + " PLN");
         } else {
