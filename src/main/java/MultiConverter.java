@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MultiConverter {
-    static int NUMBER_OF_PLN = 100;
 
+    private static int NUMBER_OF_PLN = 100;
 
     private REST_CHF rest_chf = new REST_CHF();
     private REST_EUR rest_eur = new REST_EUR();
     private REST_GPB rest_gpb = new REST_GPB();
     private REST_USD rest_usd = new REST_USD();
 
-    MultiConverter(List<REST_NBP> listOfCurrency) {
+    private MultiConverter(List<REST_NBP> listOfCurrency) {
         listOfCurrency.add(rest_chf);
         listOfCurrency.add(rest_eur);
         listOfCurrency.add(rest_gpb);
@@ -21,7 +21,6 @@ public class MultiConverter {
     }
 
     public static void main(String[] args) throws IOException {
-
 
         List<REST_NBP> list = new ArrayList<>();
         MultiConverter multiConverter = new MultiConverter(list);
