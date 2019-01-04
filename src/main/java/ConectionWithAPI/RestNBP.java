@@ -4,7 +4,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-public interface REST_NBP {
+public interface RestNBP {
 
 
     Currency getMidCurrency() throws IOException;
@@ -17,14 +17,14 @@ public interface REST_NBP {
 
     String name() throws IOException;
 
-    static double countCurrencyByMidCourse(REST_NBP rest_nbp, int numberOfPLN) throws IOException {
+    static double countCurrencyByMidCourse(RestNBP rest_nbp, int numberOfPLN) throws IOException {
         String[] valuesArray = String.valueOf(rest_nbp.getMidCurrency().getRates()).split(",");
         double value = Double.parseDouble(valuesArray[1].replace("mid=", ""));
         double result = numberOfPLN / value;
         return result;
     }
 
-    static double[] getAskBidRequest(Currency currency) throws IOException {
+    static double[] getAskBidRequest(Currency currency) {
         String[] valuesArray = String.valueOf(currency.getRates()).split(",");
         double valueAsk = Double.parseDouble(valuesArray[1].replace("ask=", ""));
         double valueBid = Double.parseDouble(valuesArray[2].replace("bid=", ""));

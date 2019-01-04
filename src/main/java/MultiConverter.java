@@ -8,12 +8,12 @@ public class MultiConverter {
 
     private static int NUMBER_OF_PLN = 100;
 
-    private REST_CHF rest_chf = new REST_CHF();
-    private REST_EUR rest_eur = new REST_EUR();
-    private REST_GPB rest_gpb = new REST_GPB();
-    private REST_USD rest_usd = new REST_USD();
+    private RestCHF rest_chf = new RestCHF();
+    private RestEUR rest_eur = new RestEUR();
+    private RestGPB rest_gpb = new RestGPB();
+    private RestUSD rest_usd = new RestUSD();
 
-    private MultiConverter(List<REST_NBP> listOfCurrency) {
+    private MultiConverter(List<RestNBP> listOfCurrency) {
         listOfCurrency.add(rest_chf);
         listOfCurrency.add(rest_eur);
         listOfCurrency.add(rest_gpb);
@@ -22,14 +22,14 @@ public class MultiConverter {
 
     public static void main(String[] args) throws IOException {
 
-        List<REST_NBP> list = new ArrayList<>();
+        List<RestNBP> list = new ArrayList<>();
         MultiConverter multiConverter = new MultiConverter(list);
         Comparator comparator = new Comparator();
 
-        System.out.println("100 PLN is worth " + REST_NBP.countCurrencyByMidCourse(multiConverter.rest_chf, MultiConverter.NUMBER_OF_PLN) + " CHF");
-        System.out.println("100 PLN is worth " + REST_NBP.countCurrencyByMidCourse(multiConverter.rest_eur, MultiConverter.NUMBER_OF_PLN) + " EUR");
-        System.out.println("100 PLN is worth " + REST_NBP.countCurrencyByMidCourse(multiConverter.rest_gpb, MultiConverter.NUMBER_OF_PLN) + " GBP");
-        System.out.println("100 PLN is worth " + REST_NBP.countCurrencyByMidCourse(multiConverter.rest_usd, MultiConverter.NUMBER_OF_PLN) + " USD");
+        System.out.println(NUMBER_OF_PLN + " PLN is worth " + RestNBP.countCurrencyByMidCourse(multiConverter.rest_chf, MultiConverter.NUMBER_OF_PLN) + " CHF");
+        System.out.println(NUMBER_OF_PLN + " PLN is worth " + RestNBP.countCurrencyByMidCourse(multiConverter.rest_eur, MultiConverter.NUMBER_OF_PLN) + " EUR");
+        System.out.println(NUMBER_OF_PLN + " PLN is worth " + RestNBP.countCurrencyByMidCourse(multiConverter.rest_gpb, MultiConverter.NUMBER_OF_PLN) + " GBP");
+        System.out.println(NUMBER_OF_PLN + " PLN is worth " + RestNBP.countCurrencyByMidCourse(multiConverter.rest_usd, MultiConverter.NUMBER_OF_PLN) + " USD");
         System.out.println();
 
         comparator.compareToMonthAgo(multiConverter.rest_chf, MultiConverter.NUMBER_OF_PLN);
@@ -37,6 +37,4 @@ public class MultiConverter {
         comparator.compareToMonthAgo(multiConverter.rest_gpb, MultiConverter.NUMBER_OF_PLN);
         comparator.compareToMonthAgo(multiConverter.rest_usd, MultiConverter.NUMBER_OF_PLN);
     }
-
-
 }

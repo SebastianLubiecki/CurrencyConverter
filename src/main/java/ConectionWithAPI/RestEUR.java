@@ -11,13 +11,12 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.time.LocalDate;
 
-public class REST_GPB implements REST_NBP {
 
-
+public class RestEUR implements RestNBP {
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/gbp/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json")), Currency.class);
 
         return currency;
     }
@@ -25,7 +24,7 @@ public class REST_GPB implements REST_NBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/gbp/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json")), Currency.class);
 
         return currency;
     }
@@ -43,7 +42,7 @@ public class REST_GPB implements REST_NBP {
             dateMouthAgo = dateMouthAgo.minusDays(1);
         }
         String date = String.valueOf(dateMouthAgo);
-        String url = "http://api.nbp.pl/api/exchangerates/rates/c/gbp/" + date + "/";
+        String url = "http://api.nbp.pl/api/exchangerates/rates/c/eur/" + date + "/";
         Currency currency = gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
         return currency;
     }
@@ -59,9 +58,10 @@ public class REST_GPB implements REST_NBP {
 
     @Override
     public String name() throws IOException {
-        REST_GPB rest_gpb = new REST_GPB();
+        RestEUR rest_eur = new RestEUR();
 
-        return rest_gpb.getMidCurrency().getCode();
+        return rest_eur.getMidCurrency().getCode();
     }
+
 
 }

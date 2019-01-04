@@ -11,7 +11,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.time.LocalDate;
 
-public class REST_USD implements REST_NBP {
+public class RestUSD implements RestNBP {
 
     @Override
     public Currency getMidCurrency() throws IOException {
@@ -58,7 +58,7 @@ public class REST_USD implements REST_NBP {
 
     @Override
     public String name() throws IOException {
-        REST_USD rest_usd = new REST_USD();
+        RestUSD rest_usd = new RestUSD();
 
         return rest_usd.getMidCurrency().getCode();
     }

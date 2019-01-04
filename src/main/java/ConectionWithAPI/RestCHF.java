@@ -11,12 +11,11 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.time.LocalDate;
 
-
-public class REST_EUR implements REST_NBP {
+public class RestCHF implements RestNBP {
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/chf/")), Currency.class);
 
         return currency;
     }
@@ -24,7 +23,7 @@ public class REST_EUR implements REST_NBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json")), Currency.class);
 
         return currency;
     }
@@ -42,26 +41,25 @@ public class REST_EUR implements REST_NBP {
             dateMouthAgo = dateMouthAgo.minusDays(1);
         }
         String date = String.valueOf(dateMouthAgo);
-        String url = "http://api.nbp.pl/api/exchangerates/rates/c/eur/" + date + "/";
+        String url = "http://api.nbp.pl/api/exchangerates/rates/c/chf/" + date + "/";
         Currency currency = gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
+
         return currency;
     }
-
 
     public JSONObject jsonObject(String url) throws IOException {
         try (InputStream inputStream = new URL(url).openStream()) {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
             String jsonText = bufferedReader.readLine();
+
             return new JSONObject(jsonText);
         }
     }
 
     @Override
     public String name() throws IOException {
-        REST_EUR rest_eur = new REST_EUR();
+        RestCHF rest_chf = new RestCHF();
 
-        return rest_eur.getMidCurrency().getCode();
+        return rest_chf.getMidCurrency().getCode();
     }
-
-
 }
