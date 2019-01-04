@@ -15,17 +15,6 @@ public class Currency {
         this.rates = rates;
     }
 
-
-// Getter Methods
-
-    public String getTable() {
-        return table;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
     public String getCode() {
         return code;
     }
@@ -33,21 +22,6 @@ public class Currency {
     ArrayList getRates() {
         return rates;
     }
-
-    // Setter Methods
-
-    public void setTable(String table) {
-        this.table = table;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
 
     @Override
     public String toString() {

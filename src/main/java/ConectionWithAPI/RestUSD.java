@@ -25,7 +25,8 @@ public class RestUSD implements RestNBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/usd/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                "http://api.nbp.pl/api/exchangerates/rates/c/usd/?format=json")), Currency.class);
 
         return currency;
     }
@@ -50,7 +51,8 @@ public class RestUSD implements RestNBP {
 
     public JSONObject jsonObject(String url) throws IOException {
         try (InputStream inputStream = new URL(url).openStream()) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
+            BufferedReader bufferedReader = new BufferedReader(
+                    new InputStreamReader(inputStream, Charset.forName("UTF-8")));
             String jsonText = bufferedReader.readLine();
             return new JSONObject(jsonText);
         }

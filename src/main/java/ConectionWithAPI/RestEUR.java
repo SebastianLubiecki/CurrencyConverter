@@ -16,7 +16,8 @@ public class RestEUR implements RestNBP {
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                "http://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json")), Currency.class);
 
         return currency;
     }
@@ -24,7 +25,8 @@ public class RestEUR implements RestNBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                "http://api.nbp.pl/api/exchangerates/rates/c/eur/?format=json")), Currency.class);
 
         return currency;
     }
@@ -43,14 +45,16 @@ public class RestEUR implements RestNBP {
         }
         String date = String.valueOf(dateMouthAgo);
         String url = "http://api.nbp.pl/api/exchangerates/rates/c/eur/" + date + "/";
-        Currency currency = gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
+        Currency currency = gson.fromJson(
+                String.valueOf(jsonObject(url)), Currency.class);
         return currency;
     }
 
 
     public JSONObject jsonObject(String url) throws IOException {
         try (InputStream inputStream = new URL(url).openStream()) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
+            BufferedReader bufferedReader = new BufferedReader(
+                    new InputStreamReader(inputStream, Charset.forName("UTF-8")));
             String jsonText = bufferedReader.readLine();
             return new JSONObject(jsonText);
         }
