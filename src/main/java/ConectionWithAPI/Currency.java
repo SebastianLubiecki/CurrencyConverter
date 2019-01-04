@@ -2,7 +2,7 @@ package ConectionWithAPI;
 
 import java.util.ArrayList;
 
-class Currency {
+public class Currency {
     private String table;
     private String currency;
     private String code;
