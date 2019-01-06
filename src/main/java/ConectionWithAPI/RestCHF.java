@@ -24,10 +24,25 @@ public class RestCHF implements RestNBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject(
-                "http://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json")), Currency.class);
+        LocalDate dateMouthAgo = LocalDate.now();
 
-        return currency;
+        if (String.valueOf(dateMouthAgo.getDayOfWeek()).equals("SUNDAY")) {
+            dateMouthAgo = dateMouthAgo.minusDays(2);
+            String date = String.valueOf(dateMouthAgo);
+            String url = "http://api.nbp.pl/api/exchangerates/rates/c/chf/" + date + "/";
+            return gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
+        }
+        if (String.valueOf(dateMouthAgo.getDayOfWeek()).equals("SATURDAY")) {
+            dateMouthAgo = dateMouthAgo.minusDays(1);
+            String date = String.valueOf(dateMouthAgo);
+            String url = "http://api.nbp.pl/api/exchangerates/rates/c/chf/" + date + "/";
+            return gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
+        } else {
+            Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                    "http://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json")), Currency.class);
+            return currency;
+        }
+
     }
 
     @Override
