@@ -15,7 +15,7 @@ public class Currency {
         this.rates = rates;
     }
 
-    public String getCode() {
+    String getCode() {
         return code;
     }
 

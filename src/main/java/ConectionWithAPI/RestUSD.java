@@ -65,5 +65,4 @@ public class RestUSD implements RestNBP {
         return rest_usd.getMidCurrency().getCode();
     }
 
-
 }

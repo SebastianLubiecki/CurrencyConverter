@@ -13,6 +13,7 @@ import java.time.LocalDate;
 
 
 public class RestEUR implements RestNBP {
+
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
@@ -50,7 +51,6 @@ public class RestEUR implements RestNBP {
         return currency;
     }
 
-
     public JSONObject jsonObject(String url) throws IOException {
         try (InputStream inputStream = new URL(url).openStream()) {
             BufferedReader bufferedReader = new BufferedReader(
@@ -66,6 +66,4 @@ public class RestEUR implements RestNBP {
 
         return rest_eur.getMidCurrency().getCode();
     }
-
-
 }

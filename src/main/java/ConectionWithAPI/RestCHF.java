@@ -28,7 +28,6 @@ public class RestCHF implements RestNBP {
                 "http://api.nbp.pl/api/exchangerates/rates/c/chf/?format=json")), Currency.class);
 
         return currency;
-
     }
 
     @Override
