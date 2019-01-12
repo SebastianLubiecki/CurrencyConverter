@@ -32,5 +32,4 @@ public interface RestNBP {
         return resultArray;
     }
 
-
 }
