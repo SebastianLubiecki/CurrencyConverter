@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec6dd419-b3a4-40a9-a6b6-d0d8a4a6b434" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestCHF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestCHF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestEUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestEUR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestUSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestUSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ComparatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,13 +28,13 @@
     <session id="1755321912">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
-          <entry key="project.open.time.0" value="15" />
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,15 +57,15 @@
         <counts>
           <entry key="dummy" value="29" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="4192" />
-          <entry key="txt" value="122" />
+          <entry key="java" value="4216" />
+          <entry key="txt" value="154" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="4192" />
-          <entry key="PLAIN_TEXT" value="151" />
+          <entry key="JAVA" value="4216" />
+          <entry key="PLAIN_TEXT" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -84,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="372">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestNBP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="166">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Comparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="166">
+              <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestCHF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="204">
               <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -139,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/Currency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="168">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -148,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MultiConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestUSD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="99">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,7 +173,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestGPB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="609">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -194,7 +190,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestEUR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="420">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -552,9 +548,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -562,7 +558,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -614,14 +610,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547296483151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547297442566" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -804,25 +800,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547279393694</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Starting testing">
+      <created>1547296519406</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547296519406</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 47m 19s.xml">
-      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 50m 39s.xml">
-      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 51m 48s.xml">
-      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 52m 04s.xml">
-      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 52m 55s.xml">
-      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 12h 54m 13s.xml">
       <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
     </history-entry>
@@ -838,12 +826,27 @@
     <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 00m 31s.xml">
       <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 34m 44s.xml">
+      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 38m 38s.xml">
+      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 43m 59s.xml">
+      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 50m 30s.xml">
+      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComparatorTest_simpleComparatorTest - 2019.01.12 at 13h 50m 44s.xml">
+      <configuration name="ComparatorTest.simpleComparatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17181209" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -853,7 +856,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932885" visible="true" weight="0.30496454" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49932885" visible="true" weight="0.22553192" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.30212766" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -918,7 +921,8 @@
     <MESSAGE value="First test red" />
     <MESSAGE value="Fix bugs in chf" />
     <MESSAGE value="Fix some bugs in chf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix some bugs in chf" />
+    <MESSAGE value="Starting testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting testing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/InputStreamReader.java">
@@ -1060,9 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#450#451#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,9 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="e#2870#2871#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,10 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,9 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#520#521#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,11 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,9 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,39 +1123,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestUSD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getMidCurrency#0;class#RestUSD#0" />
-            <element signature="method#getCurrencyNow#0;class#RestUSD#0" />
-            <element signature="method#getCurrencyPast#0;class#RestUSD#0" />
-            <element signature="method#jsonObject#0;class#RestUSD#0" />
-            <element signature="method#name#0;class#RestUSD#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestGPB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getMidCurrency#0;class#RestGPB#0" />
-            <element signature="method#getCurrencyNow#0;class#RestGPB#0" />
-            <element signature="method#getCurrencyPast#0;class#RestGPB#0" />
-            <element signature="method#jsonObject#0;class#RestGPB#0" />
-            <element signature="method#name#0;class#RestGPB#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestEUR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="420">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1185,9 +1141,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MultiConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestUSD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMidCurrency#0;class#RestUSD#0" />
+            <element signature="method#getCurrencyNow#0;class#RestUSD#0" />
+            <element signature="method#getCurrencyPast#0;class#RestUSD#0" />
+            <element signature="method#jsonObject#0;class#RestUSD#0" />
+            <element signature="method#name#0;class#RestUSD#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestNBP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestGPB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMidCurrency#0;class#RestGPB#0" />
+            <element signature="method#getCurrencyNow#0;class#RestGPB#0" />
+            <element signature="method#getCurrencyPast#0;class#RestGPB#0" />
+            <element signature="method#jsonObject#0;class#RestGPB#0" />
+            <element signature="method#name#0;class#RestGPB#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestCHF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="204">
           <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1199,48 +1205,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MultiConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="166">
+          <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConectionWithAPI/RestNBP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="372">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
