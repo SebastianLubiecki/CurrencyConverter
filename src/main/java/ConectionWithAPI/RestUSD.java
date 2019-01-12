@@ -16,10 +16,10 @@ public class RestUSD implements RestNBP {
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
-        Currency currency = gson.fromJson(String.valueOf(jsonObject("http://api.nbp.pl/api/exchangerates/rates/a/usd/?format=json")), Currency.class);
+        Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                "http://api.nbp.pl/api/exchangerates/rates/a/usd/?format=json")), Currency.class);
 
         return currency;
-
     }
 
     @Override

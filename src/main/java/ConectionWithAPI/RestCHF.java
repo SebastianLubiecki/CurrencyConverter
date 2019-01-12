@@ -2,7 +2,6 @@ package ConectionWithAPI;
 
 import com.google.gson.Gson;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,6 +11,7 @@ import java.nio.charset.Charset;
 import java.time.LocalDate;
 
 public class RestCHF implements RestNBP {
+
     @Override
     public Currency getMidCurrency() throws IOException {
         Gson gson = new Gson();
@@ -24,24 +24,10 @@ public class RestCHF implements RestNBP {
     @Override
     public Currency getCurrencyNow() throws IOException {
         Gson gson = new Gson();
-        LocalDate dateMouthAgo = LocalDate.now();
+        Currency currency = gson.fromJson(String.valueOf(jsonObject(
+                "http://api.nbp.pl/api/exchangerates/rates/c/chf/?format=json")), Currency.class);
 
-        if (String.valueOf(dateMouthAgo.getDayOfWeek()).equals("SUNDAY")) {
-            dateMouthAgo = dateMouthAgo.minusDays(2);
-            String date = String.valueOf(dateMouthAgo);
-            String url = "http://api.nbp.pl/api/exchangerates/rates/c/chf/" + date + "/";
-            return gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
-        }
-        if (String.valueOf(dateMouthAgo.getDayOfWeek()).equals("SATURDAY")) {
-            dateMouthAgo = dateMouthAgo.minusDays(1);
-            String date = String.valueOf(dateMouthAgo);
-            String url = "http://api.nbp.pl/api/exchangerates/rates/c/chf/" + date + "/";
-            return gson.fromJson(String.valueOf(jsonObject(url)), Currency.class);
-        } else {
-            Currency currency = gson.fromJson(String.valueOf(jsonObject(
-                    "http://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json")), Currency.class);
-            return currency;
-        }
+        return currency;
 
     }
 
