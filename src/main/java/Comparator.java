@@ -4,7 +4,7 @@ import java.io.IOException;
 
 class Comparator {
 
-    double compareToMonthAgo(RestNBP rest_nbp, int value) throws IOException {
+    void compareToMonthAgo(RestNBP rest_nbp, int value) throws IOException {
 
         double[] arrayNow = RestNBP.getAskBidRequest(rest_nbp.getCurrencyNow());
         double[] arrayMouthAgo = RestNBP.getAskBidRequest(rest_nbp.getCurrencyPast());
@@ -19,6 +19,5 @@ class Comparator {
             System.out.println("If you changed " + rest_nbp.name() + " to " + value +
                     " PLN a month ago, you would lost " + result + " PLN");
         }
-        return result;
     }
 }
